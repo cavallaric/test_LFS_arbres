@@ -111,4 +111,8 @@ $ git lfs track data/fr.csv
 $ git add .gitattributes data/fr.csv readme.txt
 $ git commit -m "added new fr.csv, .gitattributes and readme.txt - git lfs tracks fr.csv too"
 
+$git lfs ls-files
+07edc74869 * data/ESP_PUBLIC.IDENTITE_ARBRE.csv
+a8b54a57fe * data/fr.csv
+
 $ git push originLFStest master
