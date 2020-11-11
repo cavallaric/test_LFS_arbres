@@ -95,3 +95,17 @@ Changes to be committed:
 
 $ git commit -m "added a new .csv file and update readme.txt"
 $ git push originLFStest master
+
+it did not store it!!! it as LSF
+
+remove the file from the folder,
+git add data/fr.csv
+git commit - m "removed fr.csv as not stored as LFS"
+git push originLFStest master
+Ok it is not there anymore
+
+AGAIN
+add fr.csv to data
+git lfs track data/fr.csv
+
+git add .gitattributes data/fr.csv readme.txt
