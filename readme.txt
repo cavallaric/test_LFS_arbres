@@ -24,3 +24,33 @@ $ git status
 $ git add readme.txt
 $ git status
 $ git commit -m "added readme.txt"
+
+$ git push originLFStest master
+
+It uploads only .gitattributes and readme.txt
+
+added a .gitignore to ignore .DS_Store
+
+$ git status
+$ git add .
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   .gitignore
+	new file:   data/ESP_PUBLIC.IDENTITE_ARBRE.csv
+
+$ git lfs ls-files
+07edc74869 * data/ESP_PUBLIC.IDENTITE_ARBRE.csv
+
+$ git commit -am "commit all the folder"
+[master a065003] commit all the folder
+ 2 files changed, 5 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 data/ESP_PUBLIC.IDENTITE_ARBRE.csv
+
+ $ git push originLFStest master
+ Uploading LFS objects --> very slow ?
+
+ 
