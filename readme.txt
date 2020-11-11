@@ -17,3 +17,10 @@ $ git remote add originLFStest https://github.com/cavallaric/test_LFS_arbres.git
 $ git remote -v
 originLFStest	https://github.com/cavallaric/test_LFS_arbres.git (fetch)
 originLFStest	https://github.com/cavallaric/test_LFS_arbres.git (push)
+
+now add also the readme before pushing to the repository
+
+$ git status
+$ git add readme.txt
+$ git status
+$ git commit -m "added readme.txt"
