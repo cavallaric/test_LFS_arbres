@@ -53,4 +53,45 @@ $ git commit -am "commit all the folder"
  $ git push originLFStest master
  Uploading LFS objects --> very slow ?
 
- 
+ #################
+
+ now added fr.csv to data
+ $ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   readme.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	data/fr.csv
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+$ git add -u
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   readme.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	data/fr.csv
+
+$ git add data/fr.csv
+git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   data/fr.csv
+	modified:   readme.txt
+
+$ git commit -m "added a new .csv file and update readme.txt"
+$ git push originLFStest master
